@@ -1,0 +1,27 @@
+.tools {
+    position: relative;
+    background: rgb(42, 55, 70);
+    color: #fff;
+    padding: 64px 0 0 0;
+    text-align: center;
+    color: #fff;
+    &__prose {
+        color: #fff;
+        & a {
+            color: #b43583;
+        }
+    }
+    &__video {
+        margin: 64px 0 0 0;
+        background: #fff;
+        border-radius: 6px 6px 0 0;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2),
+            0 16px 64px hwb(0 0% 100% / 0.6);
+
+        overflow: hidden;
+
+        pointer-events: none;
+        position: relative;
+        transform: translateZ(0);
+    }
+}

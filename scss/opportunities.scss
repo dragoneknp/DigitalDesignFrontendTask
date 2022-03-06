@@ -1,0 +1,69 @@
+.opportunities {
+    background: #f5f6f8;
+    padding: 128px 0 64px 0;
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__code {
+        position: relative;
+        padding: 26px 0 0 0;
+        display: flex;
+
+        &::before {
+            background: linear-gradient(#f0f0f0, #dedede);
+            border-radius: 6px 6px 0 0;
+            box-shadow: inset 0 2px 2px -2px #fff, 0 1px rgba(0, 0, 0, 0.4);
+            content: " ";
+            display: block;
+            height: 25px;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+    }
+    &-code {
+        flex: 0 1 480px;
+        &__query {
+            padding: 16px 8px;
+            border-right: 5px solid #e0e0e0;
+            background: #fff;
+            flex: 1 1 240px;
+        }
+        &__response {
+            padding: 16px 8px;
+            flex: 1 1 240px;
+            background: #fff;
+        }
+    }
+}
+@media screen and (max-width: 870px) {
+    .opportunities {
+        &-code {
+            width: 100%;
+            margin: 64px 0 0 0;
+        }
+        &__container {
+            flex-direction: column-reverse;
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    .opportunities {
+        &-code {
+            &__query {
+                border-right: none;
+            }
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+@media screen and (max-width: 640px) {
+    .opportunities {
+        padding: 32px 0 32px 0;
+    }
+}

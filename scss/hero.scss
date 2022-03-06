@@ -1,0 +1,96 @@
+.hero {
+    height: 65vh;
+    max-height: 900px;
+    min-height: 450px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    margin: 0 auto;
+    color: #fff;
+    &__container {
+        width: 100%;
+        position: relative;
+        z-index: 12;
+    }
+    &::before {
+        background: url(../assets/graph-wash.png) repeat, #171e26;
+        left: 0;
+        max-height: 900px;
+        height: 65vh;
+        min-height: 450px;
+        content: "";
+
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    &-menu {
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        &-item {
+            display: flex;
+            flex-direction: column;
+            &__img {
+                width: 90px;
+                height: 90px;
+            }
+            &__header {
+                margin: 0 0 16px 0;
+                text-align: center;
+                &_pink {
+                    text-align: center;
+                    color: #e10098;
+                    margin: 16px 0 0 0;
+                }
+            }
+        }
+    }
+    &-buttons {
+        &-unit {
+            margin: 32px 0 0 0;
+            display: flex;
+            justify-content: center;
+            & button {
+                border: 1px solid hsla(0, 0%, 100%, 0.4);
+                border-radius: 6px;
+                color: #fff;
+                background: transparent;
+
+                &:first-child {
+                    margin: 0 24px 0 0;
+                }
+                transition: 0.2s ease-in-out;
+                &:hover {
+                    background: #fff;
+                    color: #000;
+                    transition: 0.2s ease-in-out;
+                }
+            }
+            & a {
+                display: block;
+                color: inherit;
+                padding: 8px 24px;
+                font-size: 18px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .hero {
+        &-menu {
+            align-items: center;
+            justify-content: center;
+            &-item {
+                &:not(:first-child) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

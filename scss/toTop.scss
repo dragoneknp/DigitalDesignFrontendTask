@@ -1,0 +1,13 @@
+.toTop {
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+    z-index: 200;
+    cursor: pointer;
+}
+@media screen and (max-width: 900px) {
+    .toTop {
+        right: 16px;
+        bottom: 16px;
+    }
+}

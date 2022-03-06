@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./dist/style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="content">
+                <nav class="header__navMenu">
+                    <ul class="header__menu header-menu">
+                        <li class="header-menu__item logoItem">
+                            <img src="/assets/logo.svg" alt="Logo" width="30" height="30" class="logo">
+                            <a href="https://graphql.org/learn/" target="_blank"
+                                >GraphQL</a
+                            >
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="https://graphql.org/learn/" target="_blank"
+                                >Learn</a
+                            >
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="https://graphql.org/code/" target="_blank"
+                                >Code</a
+                            >
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="https://graphql.org/community/" target="_blank"
+                                >Community</a
+                            >
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="https://graphql.org/faq/" target="_blank"
+                                >FAQ</a
+                            >
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="https://spec.graphql.org/" target="_blank"
+                                >Spec</a
+                            >
+                        </li>
+                        <li class="header-menu__item">
+                            <a
+                                href="https://graphql.org/foundation/"
+                                target="_blank"
+                                >Foundation</a
+                            >
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="https://graphql.org/blog/" target="_blank"
+                                >News</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+    
+                <div class="header__search">
+                    <input type="text" placeholder="Search docs..." />
+                    <i class="searchIcon"></i>
+                </div>
+            </div>
+            
+        </header>
+        <header class="mobileHeader">
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <div class="header__popup closed">
+                
+                    <nav class="header__navMenu">
+                        <ul class="header__menu header-menu">
+                            <li class="header-menu__item logoItem">
+                                <img src="/assets/logo.svg" alt="Logo" width="30" height="30" class="logo">
+                                <a href="https://graphql.org/learn/" target="_blank"
+                                    >GraphQL</a
+                                >
+                            </li>
+                            <li class="header-menu__item">
+                                <a href="https://graphql.org/learn/" target="_blank"
+                                    >Learn</a
+                                >
+                            </li>
+                            <li class="header-menu__item">
+                                <a href="https://graphql.org/code/" target="_blank"
+                                    >Code</a
+                                >
+                            </li>
+                            <li class="header-menu__item">
+                                <a href="https://graphql.org/community/" target="_blank"
+                                    >Community</a
+                                >
+                            </li>
+                            <li class="header-menu__item">
+                                <a href="https://graphql.org/faq/" target="_blank"
+                                    >FAQ</a
+                                >
+                            </li>
+                            <li class="header-menu__item">
+                                <a href="https://spec.graphql.org/" target="_blank"
+                                    >Spec</a
+                                >
+                            </li>
+                            <li class="header-menu__item">
+                                <a
+                                    href="https://graphql.org/foundation/"
+                                    target="_blank"
+                                    >Foundation</a
+                                >
+                            </li>
+                            <li class="header-menu__item">
+                                <a href="https://graphql.org/blog/" target="_blank"
+                                    >News</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+        
+                    <div class="header__search">
+                        <input type="text" placeholder="Search docs..." class="header__search_input"/>
+                        <i class="searchIcon"></i>
+                    </div>
+                
+            </div>
+        </header>
+        <section class="hero">
+            <div class="hero__container container">
+                <ul class="hero__menu hero-menu">
+                    <li class="hero-menu__item hero-menu-item">
+                        <img
+                            class="hero-menu-item__img"
+                            src="./assets/logo.svg"
+                            alt="GraphQL logo"
+                        />
+                        <h3 class="hero-menu-item__header_pink">GraphQL</h3>
+                    </li>
+                    <li class="hero-menu__item hero-menu-item">
+                        <h3 class="hero-menu-item__header">
+                            Describe your data
+                        </h3>
+                        <pre class="hero-menu-item__info">
+type Project 
+{
+  name: String
+  tagline: String
+  contributors: [User]
+}
+                      </pre
+                        >
+                    </li>
+                    <li class="hero-menu__item hero-menu-item">
+                        <h3 class="hero-menu-item__header">
+                            Ask for what you want
+                        </h3>
+                        <pre class="hero-menu-item__info">
+{
+  project(name: "GraphQL") {
+  tagline
+  }
+}</pre
+                        >
+                    </li>
+                    <li class="hero-menu__item hero-menu-item">
+                        <h3 class="hero-menu-item__header">
+                            Get predictable results
+                        </h3>
+                        <pre class="hero-menu-item__info">
+{
+  "project": {
+  "tagline": "A query language for APIs"
+  }
+}</pre
+                        >
+                    </li>
+                </ul>
+                <div class="hero-buttons-unit">
+                    <button>
+                        <a href="https://graphql.org/code/" target="_blank"
+                            >Get Started</a
+                        >
+                    </button>
+                    <button>
+                        <a href="https://graphql.org/learn/" target="_blank"
+                            >Learn More</a
+                        >
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="introduction">
+            <div class="container introduction__container">
+                <div class="introduction__block">
+                    <h1 class="introduction__header">
+                        A query language for your API
+                    </h1>
+                    <p class="introduction__description">
+                        GraphQL is a query language for APIs and a runtime for
+                        fulfilling those queries with your existing data.
+                        GraphQL provides a complete and understandable
+                        description of the data in your API, gives clients the
+                        power to ask for exactly what they need and nothing
+                        more, makes it easier to evolve APIs over time, and
+                        enables powerful developer tools.
+                    </p>
+                </div>
+                <div class="introduction__example">
+                    <div class="introduction__code introduction-code">
+                        <div class="introduction-code__query">
+                            <pre>
+{
+    hero {
+        name
+        <span class="query__height">height</span>
+        <span class="query__mass">mass</span>
+    }
+}
+                                </pre>
+                        </div>
+                        <div class="introduction-code__response">
+                            <pre>
+{
+    "hero" {
+        "name" : "Luke"
+        <span class="response__height">"height" : 1.72</span>
+        <span class="response__mass">"mass" : 77</span>
+    }
+}
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="prose">
+                        <h2 class="prose__header">
+                            Ask for what you need, get exactly that
+                        </h2>
+                        <p class="prose__description">
+                            Send a GraphQL query to your API and get exactly
+                            what you need,ss nothing more and nothing less.
+                            GraphQL queries always return predictable results.
+                            Apps using GraphQL are fast and stable because they
+                            control the data they get, not the server.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="benefits">
+            <div class="benefits__container container">
+                <div class="prose">
+                    <h2 class="prose__header">
+                        Get many resources in a single request
+                    </h2>
+                    <p class="prose__description">
+                        GraphQL queries access not just the properties of one
+                        resource but also smoothly follow references between
+                        them. While typical REST APIs require loading from
+                        multiple URLs, GraphQL APIs get all the data your app
+                        needs in a single request. Apps using GraphQL can be
+                        quick even on slow mobile network connections.
+                    </p>
+                </div>
+                <div class="benefits__animation benefits-animation">
+                    <img
+                        src="./assets/phone.svg"
+                        alt="Phone"
+                        class="phone"
+                        width="496"
+                        height="440"
+                    />
+                    <div class="benefits-animation__query">
+                        <pre>
+{
+    "hero": {
+        "name": "Luke",
+        "friends": [
+            {"name": "R2-D2"}
+        ]
+    }
+}
+                            </pre
+                        >
+                    </div>
+                    <div class="benefits-animation__response">
+                        <pre>
+{
+    hero {
+        name
+        friend {
+            name
+        }
+    }
+}
+                            </pre
+                        >
+                    </div>
+                    <img
+                        src="./assets/server.svg"
+                        alt="Server"
+                        class="server"
+                        width="496"
+                        height="440"
+                    />
+                </div>
+            </div>
+        </section>
+        <section class="opportunities">
+            <div class="opportunities__container container">
+                <div class="opportunities__code opportunities-code">
+                    <div class="opportunities-code__query">
+                        <pre>
+{
+    hero {
+        name
+        friends {
+        name
+        homeWorld {
+            name
+            climate
+        }
+        species {
+            name
+            lifespan
+            origin {
+            name
+            }
+        }
+        }
+    }
+}
+</pre
+                        >
+                    </div>
+                    <div class="opportunities-code__response">
+                        <pre>
+type Query {
+    hero: Character
+}
+    
+type Character {
+    name: String
+    friends: [Character]
+    homeWorld: Planet
+    species: Species
+}
+    
+type Planet {
+    name: String
+    climate: String
+}
+    
+type Species {
+    name: String
+    lifespan: Int
+    origin: Planet
+}
+                        </pre>
+                    </div>
+                </div>
+                <div class="prose">
+                    <div class="prose__header">
+                        Describe what’s possible with a type system
+                    </div>
+                    <div class="prose__description">
+                        GraphQL APIs are organized in terms of types and fields,
+                        not endpoints. Access the full capabilities of your data
+                        from a single endpoint. GraphQL uses types to ensure
+                        Apps only ask for what’s possible and provide clear and
+                        helpful errors. Apps can use types to avoid writing
+                        manual parsing code.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tools">
+            <div class="tools__container container">
+                <div class="prose tools__prose" style="margin: 0 auto;">
+                    <h2 class="prose__header" style="color: #fff;">
+                        Move faster with powerful developer tools
+                    </h2>
+                    <div class="prose__description" style="color: #fff">
+                        Know exactly what data you can request from your API
+                        without leaving your editor, highlight potential issues
+                        before sending a query, and take advantage of improved
+                        code intelligence. GraphQL makes it easy to build
+                        powerful tools like
+                        <a href="https://github.com/graphql/graphiql"
+                            >GraphiQL</a
+                        >
+                        by leveraging your API’s type system.
+                    </div>
+                </div>
+                <div class="tools__video">
+                    <video
+                        src="./assets/video.mp4"
+                        muted
+                        loop
+                        autoplay
+                        playsinline
+                    ></video>
+                </div>
+            </div>
+        </section>
+        <section class="evolve">
+            <div class="evolve__container container">
+                <div class="evolve__code">
+                    <pre>
+type Film {
+    title: String
+    episode: Int
+    releaseDate: String
+    openingCrawl: String
+    director: String
+    directedBy: Person
+    }
+    
+    type Person {
+    name: String
+    directed: [Film]
+    actedIn: [Film]
+    }
+    type Film {
+    title: String
+    episode: Int
+    releaseDate: String
+    openingCrawl: String
+    director: String @deprecated
+    directedBy: Person
+    }
+    
+    type Person {
+    name: String
+    directed: [Film]
+    actedIn: [Film]
+    
+    }
+                    </pre>
+                </div>
+                <div class="prose">
+                    <h2 class="prose__header">
+                        Evolve your API without versions
+                    </h2>
+                    <p class="prose__description">
+                        Add new fields and types to your GraphQL API without
+                        impacting existing queries. Aging fields can be
+                        deprecated and hidden from tools. By using a single
+                        evolving version, GraphQL APIs give apps continuous
+                        access to new features and encourage cleaner, more
+                        maintainable server code.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="evolve" style="background: #f5f6f8">
+            <div
+                class="evolve__container container"
+                style="flex-direction: row-reverse"
+            >
+                <div class="evolve__code">
+                    <pre>
+// type Character {
+public class Character {
+    // name: String
+    public String Name { get; }
+
+    // homeWorld: Planet
+    public async Task<Planet> GetHomeWorldAsync() {
+    return await FetchHomeworldAsync(_HomeworldID);
+    }
+
+    // friends: [Character]
+    public async IEnumerable<Task<Character>> GetFriendsAsync() {
+    return _FriendIDs.Select(FetchCharacterAsync);
+    }
+}
+                    </pre>
+                </div>
+                <div class="prose">
+                    <h2 class="prose__header">
+                        Bring your own data and code
+                    </h2>
+                    <p class="prose__description">
+                        GraphQL creates a uniform API across your entire
+                        application without being limited by a specific storage
+                        engine. Write GraphQL APIs that leverage your existing
+                        data and code with GraphQL engines available in many
+                        languages. You provide functions for each field in the
+                        type system, and GraphQL calls them with optimal
+                        concurrency.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="users">
+            <div class="container users__container">
+                <div class="prose">
+                    <h2 class="prose__header">Who’s using GraphQL?
+                    </h2>
+                    <p class="prose__description">Facebook's mobile apps have been powered by GraphQL since 2012. A GraphQL spec was open sourced in 2015 and is now available in many environments and used by teams of all sizes.
+    
+                    </p>
+                </div>
+                <div class="users__icons">
+                    <img src="/assets/coursera.png" alt="Coursera">
+                    <img src="/assets/pinterest.png" alt="Coursera">
+                    <img src="/assets/github.png" alt="Coursera">
+                    <img src="/assets/intuit.png" alt="Coursera">
+                    <img src="/assets/facebook.png" alt="Coursera">
+                    <img src="/assets/shopify.png" alt="Coursera">
+                </div>
+                <button>
+                    <a href="https://graphql.org/users">More GraphQL users</a>
+                </button>
+            </div>
+            
+        </section>
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer__category footer-category">
+                    <h2 class="footer-category__header">Learn</h2>
+                    <ul class="footer-category-list">
+                        <li class="footer-category-list__item">
+                            <a href="https://graphql.org/learn/">Introduction to GraphQL</a>
+                        </li>
+                        <li class="footer-category-list__item">
+                            <a href="https://graphql.org/learn/best-practices/">Best Practices</a>
+                        </li>
+                        <li class="footer-category-list__item">
+                            <a href="https://graphql.org/learn/">FAQ</a>
+                        </li>
+                        <li class="footer-category-list__item">
+                            <a href="https://graphql.org/learn/">Training Courses</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__category">
+                    <ul class="footer-category-list">
+                        <h2 class="footer-category__header">Code</h2>
+                        <li class="footer-category-list__item">
+                            <a href="https://graphql.org/learn/">Github</a>
+                        </li>
+                        <li class="footer-category-list__item">
+                            <a href="https://graphql.org/learn/best-practices/">GraphQL Spec</a>
+                        </li>
+                        <li class="footer-category-list__item">
+                            <a href="https://graphql.org/learn/">Libraries and tools</a>
+                        </li>
+                        <li class="footer-category-list__item">
+                            <a href="https://graphql.org/learn/">Services and Vendors</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__category">
+                    <h2 class="footer-category__header">Community</h2>
+                    <ul class="footer-category-list">
+                        <li class="footer-category-list__item">
+                            <a href="https://graphql.org/learn/">@graphql</a>
+                        </li>
+                        <li class="footer-category-list__item">
+                            <a href="https://graphql.org/learn/best-practices/">Discord</a>
+                        </li>
+                        <li class="footer-category-list__item">
+                            <a href="https://graphql.org/learn/">Stack owerflow</a>
+                        </li>
+                        <li class="footer-category-list__item">
+                            <a href="https://graphql.org/learn/">Resources</a>
+                        </li>
+                        <li class="footer-category-list__item">
+                            <a href="https://graphql.org/learn/">Events</a>
+                        </li>
+                        <li class="footer-category-list__item">
+                            <a href="https://graphql.org/learn/">Landscapes</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__category">
+                    <h2 class="footer-category__header">& More</h2>
+                    <ul class="footer-category-list">
+                        <li class="footer-category-list__item">
+                            <a href="https://graphql.org/learn/">News Blog</a>
+                        </li>
+                        <li class="footer-category-list__item">
+                            <a href="https://graphql.org/learn/best-practices/">GraphQL Foundation</a>
+                        </li>
+                        <li class="footer-category-list__item">
+                            <a href="https://graphql.org/learn/">GraphQL Community Grant</a>
+                        </li>
+                        <li class="footer-category-list__item">
+                            <a href="https://graphql.org/learn/">Logo and Brand Guidelines</a>
+                        </li>
+                        <li class="footer-category-list__item">
+                            <a href="https://graphql.org/learn/">Code of conduct</a>
+                        </li>
+                        <li class="footer-category-list__item">
+                            <a href="https://graphql.org/learn/">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <div class="toTop">
+            <img src="/assets/arrowTop.png" alt="Arrow to top">
+        </div>
+        <script src="./dist/bundle.js"></script>
+    </body>
+</html>

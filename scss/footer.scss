@@ -1,0 +1,35 @@
+.footer {
+    background: #2a3746;
+    box-shadow: inset 0 10px 10px -5px #0d1116;
+    color: #202020;
+    font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 32px 0 96px 0;
+    & a {
+        color: #fff;
+    }
+    &__container {
+        display: grid;
+
+        grid-template-columns: repeat(4, 1fr);
+    }
+    &-category {
+        &__header {
+            color: #869cb6;
+        }
+        &-list {
+            &__item {
+                margin: 8px 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .footer {
+        &__container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
