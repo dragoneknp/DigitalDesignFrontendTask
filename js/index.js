@@ -11,6 +11,7 @@ import "../scss/prose.scss";
 import "../scss/users.scss";
 import "../scss/footer.scss";
 import "../scss/toTop.scss";
+import "../scss/notification.scss";
 
 import { getDateInfo } from "./utils/getDateInfo";
 console.log(getDateInfo("01.01.2022"));
@@ -62,4 +63,8 @@ popup.addEventListener("click", (event) => {
             document.body.style.overflow = "hidden";
         }
     }
+});
+
+document.querySelector(".cross").addEventListener("click", () => {
+    document.querySelector(".notification").classList.toggle("hidden");
 });
