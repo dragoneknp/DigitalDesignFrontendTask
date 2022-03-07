@@ -64,6 +64,12 @@
 }
 @media screen and (max-width: 640px) {
     .opportunities {
-        padding: 32px 0 32px 0;
+        padding: 128px 0 32px 0;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .opportunities {
+        padding: 64px 0 32px 0;
     }
 }
